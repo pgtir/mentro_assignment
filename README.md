@@ -5,6 +5,6 @@
 ### Deployed At https://mentro-assignment-jy2d.onrender.com/
 
 ### Live Demo 
-![mentro](https://user-images.githubusercontent.com/87230033/224283198-4234d322-d46f-4835-8018-2f9c6f8f2df0.gif)
+![mentro](https://user-images.githubusercontent.com/87230033/224326839-7465dc8c-d100-4f7f-adfa-6b83133f7484.gif)
 
 
