@@ -1,0 +1,93 @@
+.overview {
+    margin-top: 15%;
+    margin-left: 6%;
+    max-width: 30%;
+  }
+  .rating .num {
+    padding-left: 2.5%;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--bg-primary);
+    line-height: 50px;
+  }
+  .stars {
+    display: flex;
+    color: var(--bg-primary);
+    font-size: 33px;
+  }
+  
+  .title {
+    margin-top: 5%;
+  }
+  
+  .title .name {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.015 rem;
+  }
+  
+  .designation {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.015 rem;
+  }
+  .description {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: justify;
+    margin-top: 7%;
+    letter-spacing: 0.015rem;
+  }
+  
+  .book-btn {
+    margin-top: 7%;
+    font-weight: 600;
+    background-color: var(--bg-primary);
+    width: max-content;
+    min-width: 40%;
+    max-width: 80%;
+    color: var(--bg-text-light);
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 17px;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px  var(--bg-light);
+    letter-spacing: 0.015 rem;
+  }
+  /* Enter Transition */
+.animate-overview-enter {
+  opacity: 0;
+  transform: translateX(5%) translateY(2%);
+}
+.animate-overview-enter-active {
+  opacity: 1;
+  transition: all 2000ms ;
+  transform: translateX(0%) translateY(0%);
+}
+.animate-overview-enter-done {
+  opacity: 1;
+  transform: translateX(0%) translateY(0%);
+}
+
+/* Exit Transition */
+
+.animate-overview-exit {
+  opacity: 0;
+  transform: translateX(5%) translateY(2%);
+}
+.animate-overview-exit-active {
+  opacity: 1;
+  transition: all 2000ms ;
+  transform: translateX(0%) translateY(0%);
+}
+.animate-overview-exit-done {
+  opacity: 1;
+  transform: translateX(0%) translateY(0%);
+}

@@ -1,0 +1,118 @@
+.image-orbit {
+    width: 80%;
+    height: 153%;
+    top: -85%;
+    left: 30%;
+    background-color: var(--bg-animation);
+    position: fixed;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .dotted {
+    position:relative;
+    width: 55%;
+    height: 60%;
+    top: 68%;
+    left: 20%;
+    border: 2px dashed var(--bg-primary);
+    border-radius: 50%;
+  }
+  
+  .image{
+    position: absolute;
+  }
+  img {
+    height: 116px;
+    width: 116px;
+  }
+  
+  .top {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .top-left {
+    top: 10%;
+    left: 20%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .top-right {
+    top: 10%;
+    right: 20%;
+    transform: translateX(50%) translateY(-50%);
+  }
+  .bottom-left {
+    bottom: 44%;
+    left: 0%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .bottom-right {
+    bottom: 44%;
+    right: 0%;
+    transform: translateX(50%) translateY(-50%);
+  }
+
+
+  /* Enter Transition */
+  .animate-orbit-left-enter {
+    opacity: 1;
+    transform:  rotate(6deg);
+  }
+  .animate-orbit-left-enter-active {
+    opacity: 1;
+    transition: all 2000ms ;
+    transform:  rotate(0deg);
+  }
+  .animate-orbit-left-enter-done {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  
+  /* Exit Transition */
+  
+  .animate-orbit-left-exit {
+    opacity: 1;
+    transform: rotate(6deg);
+  }
+  .animate-orbit-left-exit-active {
+    opacity: 1;
+    transition: all 2000ms ;
+    transform: rotate(0deg);
+  }
+  .animate-orbit-left-exit-done {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  /* Enter Transition */
+  .animate-orbit-right-enter {
+    opacity: 1;
+    transform: rotate(-6deg);
+  }
+  .animate-orbit-right-enter-active {
+    opacity: 1;
+    transition: all 2000ms ;
+    transform:  rotate(0deg);
+  }
+  .animate-orbit-right-enter-done {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  
+  /* Exit Transition */
+  
+  .animate-orbit-right-exit {
+    opacity: 1;
+    transform: rotate(-6deg);
+  }
+  .animate-orbit-right-exit-active {
+    opacity: 1;
+    transition: all 2000ms ;
+    transform: rotate(0deg);
+  }
+  .animate-orbit-right-exit-done {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
