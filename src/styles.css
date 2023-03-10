@@ -1,9 +1,7 @@
 :root {
-  --bg-primary: #4CAF50;
   --bg-text: #000000;
   --bg-text-light: #FFFFFF;
   --bg-light:  #00A107;
-  --bg-animation: #C5F8C7;
 }
 
  * {

@@ -13,7 +13,6 @@ function ImageOrbit() {
   const isEnter = useSelector(state => state.mentor.isAnimationEnter)
   const isRotateLeft = useSelector(state => state.mentor.isLeftRotate)
   const isRotateRight = useSelector(state => state.mentor.isRightRotate)
-  console.log(mentor_id)
     return (
       <div className="image-orbit" style={{backgroundColor: `${mentor_id == 3 || mentor_id == 5 ? "#7ABD87": "#C5F8C7"}`}}>
       <CSSTransition
