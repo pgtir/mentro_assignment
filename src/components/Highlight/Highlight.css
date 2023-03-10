@@ -55,7 +55,7 @@
   /* Enter Transition */
 .animate-highlight-enter {
   opacity: 0.75;
-  transform: translateY(2%);
+  transform: translateY(5%);
 }
 .animate-highlight-enter-active {
   opacity: 1;
@@ -71,7 +71,7 @@
 
   .animate-highlight-exit {
     opacity: 0.75;
-    transform: translateY(2%);
+    transform: translateY(5%);
   }
   .animate-highlight-exit-active {
     opacity: 1;
