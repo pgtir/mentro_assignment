@@ -9,11 +9,13 @@ import './Overview.css'
 function Overview() {
   const mentor_id = useSelector(state => state.mentor.id)
   const isEnter = useSelector(state => state.mentor.isAnimationEnter)
+  const bgLight = "#4CAF50"
+  const bgDark = "609B6C"
     return (
       <div className="overview">
       <div className="rating">
-        <span className="num">{mentor_data[mentor_id - 1].rating}</span>
-        <div className="stars">
+        <span className="num" style={{color: `${mentor_id == 3 || mentor_id == 5 ? bgDark : bgLight}`}}>{mentor_data[mentor_id - 1].rating}</span>
+        <div className="stars" style={{color: `${mentor_id == 3 || mentor_id == 5 ? bgDark : bgLight}`}}>
           <TiStar/>
           <TiStar/>
           <TiStar/>
@@ -28,7 +30,7 @@ function Overview() {
       <div className="description">
       {mentor_data[mentor_id - 1].description}
       </div>
-      <div className="book-btn">Book a session</div>
+      <div className="book-btn" style={{backgroundColor: `${mentor_id == 3 || mentor_id == 5 ? bgDark : bgLight}`}}>Book a session</div>
     </div>
     )
   }

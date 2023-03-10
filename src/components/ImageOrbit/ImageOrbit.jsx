@@ -13,13 +13,14 @@ function ImageOrbit() {
   const isEnter = useSelector(state => state.mentor.isAnimationEnter)
   const isRotateLeft = useSelector(state => state.mentor.isLeftRotate)
   const isRotateRight = useSelector(state => state.mentor.isRightRotate)
+  console.log(mentor_id)
     return (
-      <div className="image-orbit">
+      <div className="image-orbit" style={{backgroundColor: `${mentor_id == 3 || mentor_id == 5 ? "#7ABD87": "#C5F8C7"}`}}>
       <CSSTransition
           in ={isEnter}
           timeout={2000}
           classNames={isRotateLeft == true && isRotateRight == false ? "animate-orbit-left" : "animate-orbit-right"}>
-        <div className="dotted">
+        <div className="dotted" style={{border: `2px dashed ${mentor_id == 3 || mentor_id == 5 ? "#0C3959": "#4CAF50"}`}}>
           
           <div className="image top">
           <img src={mentor_data[mentor_id - 1].image} alt="" />

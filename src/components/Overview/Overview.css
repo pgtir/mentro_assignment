@@ -7,12 +7,10 @@
     padding-left: 2.5%;
     font-size: 40px;
     font-weight: 700;
-    color: var(--bg-primary);
     line-height: 50px;
   }
   .stars {
     display: flex;
-    color: var(--bg-primary);
     font-size: 33px;
   }
   
@@ -48,7 +46,6 @@
   .book-btn {
     margin-top: 7%;
     font-weight: 600;
-    background-color: var(--bg-primary);
     width: max-content;
     min-width: 40%;
     max-width: 80%;

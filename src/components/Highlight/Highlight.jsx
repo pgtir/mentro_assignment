@@ -9,13 +9,14 @@ import {CSSTransition} from 'react-transition-group'
 function Highlight() {
     const mentor_id = useSelector(state => state.mentor.id)
     const isEnter = useSelector(state => state.mentor.isAnimationEnter)
-
+    const bgLight = "#4CAF50"
+    const bgDark = "609B6C"
     const dispatach = useDispatch();
     return (
         <div className="highlight">
         <div className="img-container">
         <div className="arrow-btn">
-        <div className="btn-left" onClick={() => dispatach(rotateLeft())}>
+        <div className="btn-left" style={{backgroundColor: `${mentor_id == 3 || mentor_id == 5 ? bgDark : bgLight}`}} onClick={() => dispatach(rotateLeft())}>
         <BsArrowDown/>
         </div>
         </div>
@@ -28,7 +29,7 @@ function Highlight() {
         </div>
         </CSSTransition>
         <div className="arrow-btn">
-        <div className="btn-right" onClick={() => dispatach(rotateRight())}>
+        <div className="btn-right" style={{backgroundColor: `${mentor_id == 3 || mentor_id == 5 ? bgDark : bgLight}`}} onClick={() => dispatach(rotateRight())}>
         <BsArrowDown/>
         </div>
         </div>
